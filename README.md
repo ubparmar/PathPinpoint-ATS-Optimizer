@@ -78,5 +78,8 @@ PathPinpoint empowers you to **beat the bots** and **speak the recruiters’ lan
    ```bash
    git clone https://github.com/ubparmar/PathPinpoint-ATS-Optimizer.git
    cd PathPinpoint-ATS-Optimizer
+   
+2. **Library Installation & Run the projct**  
+   ```bash
    pip install requirements.txt
    streamlit run app.py
