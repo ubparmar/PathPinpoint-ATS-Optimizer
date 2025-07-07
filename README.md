@@ -7,6 +7,8 @@
 
 > Instantly score your resume against any job description, get laser-focused feedback, and download polished, tailored documents to land more interviews.
 
+🔗 **Try it live:** [pathpinpoint-ats-optimizer.streamlit.app](https://pathpinpoint-ats-optimizer.streamlit.app/)
+
 ---
 
 ## 🔖 Table of Contents
