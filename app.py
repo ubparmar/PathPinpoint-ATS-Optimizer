@@ -16,12 +16,17 @@ from PIL import Image
 
 # 1) Page setup
 st.set_page_config(page_title="PathPinpoint", page_icon="📍", layout="wide")
-load_dotenv()
-API_KEY = os.getenv("GOOGLE_API_KEY", "")
-if not API_KEY:
-    st.error("API key missing in `.env`")
-genai.configure(api_key=API_KEY)
+# load_dotenv()
+# API_KEY = os.getenv("GOOGLE_API_KEY", "")
+# if not API_KEY:
+#     st.error("API key missing in `.env`")
+# genai.configure(api_key=API_KEY)
+API_KEY = st.secrets.get("GOOGLE_API_KEY", "")
 
+if not API_KEY:
+    st.error("API key missing in Streamlit secrets")
+else:
+    genai.configure(api_key=API_KEY)
 # 2) Text cleaning
 def latin1_clean(text: str) -> str:
     replacements = {
