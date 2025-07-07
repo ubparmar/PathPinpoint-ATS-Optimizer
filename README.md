@@ -1,42 +1,80 @@
 <p align="center">
-  <img src="images/pathpinpoint_logo.png" alt="PathPinpoint Logo" width="200"/>
+  <img src="images/pathpinpoint_logo.png" alt="PathPinpoint Logo" width="180"/>
 </p>
 
-# 📍 PathPinpoint
+# 📍 PathPinpoint  
+**The AI-Powered ATS Resume Optimizer**  
 
-**AI-Powered ATS Resume Optimizer**  
-Instantly see how well your resume matches any job—then get tailored docs, interview prep, and upskill advice to land the role.
-
----
-
-## 🚀 Features
-
-- **See Your Fit Instantly**  
-  A clear percentage score shows how closely your resume aligns with a job description.
-
-- **Spot Missing Keywords**  
-  Identify the exact terms recruiters are looking for—and add them to stand out.
-
-- **Actionable Tips**  
-  Friendly bullet-point feedback on skills, achievements, tone, and formatting.
-
-- **Fresh Resume & Cover Letter**  
-  AI crafts a polished, targeted resume and one-page cover letter—no blank pages.
-
-- **Interview Prep & Skill Gap**  
-  Get likely interview questions and personalized upskilling recommendations.
-
-- **Explore Roles & Salaries**  
-  Discover similar job titles you might love and peek at market salary ranges.
-
-- **Networking Nudge**  
-  Simple tips on who to connect with and what to say to get noticed.
+> Instantly score your resume against any job description, get laser-focused feedback, and download polished, tailored documents to land more interviews.
 
 ---
 
-## 🔧 Installation
+## 🔖 Table of Contents
+1. [Why PathPinpoint?](#why-pathpinpoint)  
+2. [Key Features](#key-features)  
+3. [Tech Stack](#tech-stack)  
+4. [Prerequisites](#prerequisites)  
+5. [Installation & Setup](#installation--setup)  
+6. [Running the App](#running-the-app)  
+7. [How to Use](#how-to-use)  
+8. [Project Structure](#project-structure)  
+9. [Troubleshooting](#troubleshooting)  
+10. [Connect & Support](#connect--support)
 
-1. **Clone the repo**  
+---
+
+## 🎯 Why PathPinpoint?
+Recruiters use Applicant Tracking Systems (ATS) to filter resumes in seconds.  
+PathPinpoint empowers you to **beat the bots** and **speak the recruiters’ language**, by:
+- **Quantifying** your fit with a clear “Match %” score  
+- Exposing **missing keywords** you need to add  
+- Generating **tailored** resume + cover letter in one click  
+- Suggesting **interview questions** and **skill-gap** fixes  
+
+---
+
+## ✨ Key Features
+- **ATS Match Score**  
+  A 1–100% measure of how well your resume aligns with the job description.
+- **Keyword Gap Analysis**  
+  Highlight missing terms & skills recruiters expect to see.
+- **Profile Summary & Tone**  
+  AI-crafted bullet points to sharpen your professional narrative.
+- **AI-Tailored Resume**  
+  Reformatted, keyword-optimized resume ready to download (PDF & DOCX).
+- **One-Page Cover Letter**  
+  Custom cover letter that echoes the JD’s language and your achievements.
+- **Interview Prep**  
+  Five likely questions based on the JD to practice with.
+- **Skill-Gap Recommendations**  
+  Pinpoint which certifications or courses will boost your profile.
+- **Related Roles & Salary Insights**  
+  Explore similar job titles and get a ballpark salary range.
+- **Networking Tips**  
+  Quick suggestions on who to connect with and conversation starters.
+
+---
+
+## 🛠️ Tech Stack
+- **Frontend & UI**: [Streamlit](https://streamlit.io/)  
+- **LLM Backend**: Google Gemini API via `google-generativeai`  
+- **PDF Generation**: [FPDF](https://pypi.org/project/fpdf/)  
+- **Word Docs**: [`python-docx`](https://python-docx.readthedocs.io/)  
+- **Data & Utilities**: `PyPDF2`, `pandas`, `difflib`  
+- **Configuration**: `.env` with [`python-dotenv`](https://pypi.org/project/python-dotenv/)  
+
+---
+
+## 🔧 Prerequisites
+- **Python 3.10+**  
+- A free [Google Cloud](https://console.cloud.google.com/) account with **Generative AI** enabled  
+- **API Key** for Google Gemini (Gemini Pro / Gemma model)
+
+---
+
+## ⚙️ Installation & Setup
+
+1. **Clone the repository**  
    ```bash
    git clone https://github.com/ubparmar/PathPinpoint-ATS-Optimizer.git
    cd PathPinpoint-ATS-Optimizer
